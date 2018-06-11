@@ -1,6 +1,7 @@
 package com.example.android.musicalapp;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -10,7 +11,8 @@ import java.util.ArrayList;
  * Created by rosaperez on 6/10/18.
  */
 
-public class SiouxsieActivity {
+public class SiouxsieActivity extends AppCompatActivity {
+
 
     private Object android;
     private ListAdapter adapter;
@@ -19,7 +21,7 @@ public class SiouxsieActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout.songs_list);
+        setContentView(layout.song_list);
 
         // Create an array of words
         // words.add("one");
@@ -48,7 +50,7 @@ public class SiouxsieActivity {
         // Make the {@link ListView} use the
         // {@link ListView} will display
 
-        listView.setAdapter(songsAdapter);
+        listView.setAdapter(itemsAdapter);
 
     }
 
@@ -56,3 +58,40 @@ public class SiouxsieActivity {
 
 
 }
+
+
+
+
+//
+//        // Create an array of words
+//        // words.add("one");
+//        ArrayList<Word> words = new ArrayList<Word>();
+//        words.add(new Word("one", "lutti"));
+//        words.add(new Word("two", "otiiko"));
+//        words.add(new Word("three", "tolookosu"));
+//        words.add(new Word("four", "oyyisa"));
+//        words.add(new Word("five", "massokka"));
+//
+//
+//        // Create a new {@link TextView}
+//        // adapter knows how to create
+//        //WordAdapter itemsAdapter = new WordAdapter(this,words);
+//        WordAdapter itemsAdapter = new WordAdapter(this,words);
+//
+//        //ArrayAdapter itemsAdapter = new ArrayAdapter();
+//        //WordAdapter itemsAdapter = new WordAdapter();
+//
+//        // Find the {@link ListView} object in the
+//        // There should be a {@link ListView}
+//        // word_listyout
+//        ListView listView = (ListView) findViewById(R.id.list);
+//
+//
+//        // Make the {@link ListView} use the
+//        // {@link ListView} will display
+//
+//        listView.setAdapter(itemsAdapter);
+//
+//    }
+//
+//}
