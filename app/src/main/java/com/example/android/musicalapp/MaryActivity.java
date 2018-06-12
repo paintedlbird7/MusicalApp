@@ -8,10 +8,10 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * Created by rosaperez on 6/10/18.
+ * Created by rosaperez on 6/12/18.
  */
 
-public class SiouxsieActivity extends AppCompatActivity {
+public class MaryActivity extends AppCompatActivity {
 
 
     private Object android;
@@ -26,7 +26,7 @@ public class SiouxsieActivity extends AppCompatActivity {
         // Create an array of words
         // words.add("one");
         final ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("painted bird", "A Kiss in the Dreamhouse\n"));
+        songs.add(new Song("one", "lutti"));
         songs.add(new Song("two", "otiiko"));
         songs.add(new Song("three", "tolookosu"));
         songs.add(new Song("four", "oyyisa"));
