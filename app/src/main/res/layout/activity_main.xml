@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    tools:context="com.example.android.musicalapp.MainActivity">
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.musicalapp.MainActivity"
     android:weightSum="1">
 
 
@@ -26,28 +35,49 @@
         android:background="@color/category_numbers"
         android:fontFamily="cursive"
         android:text="Painted Bird"
+        android:paddingTop="10dp"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold" />
 
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_media_play" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_media_pause" />
+        android:layout_gravity="center"
+        android:background="#ffbb"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+
+
+
+    </LinearLayout>
+
+
+
 
     <ImageView
         android:id="@+id/twolovers"
         android:layout_width="358dp"
         android:layout_height="158dp"
         app:srcCompat="@drawable/mary" />
+
+
 
     <TextView
         android:id="@+id/mary"
@@ -58,20 +88,33 @@
         android:background="@color/category_phrases"
         android:fontFamily="monospace"
         android:text="Two Lovers"
+        android:paddingTop="10dp"
         android:textAlignment="center"
         android:textSize="30sp" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffbb"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="123dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_media_pause" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="123dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_media_play" />
 
+    </LinearLayout>
 
 </LinearLayout>
+    </ScrollView>
+
