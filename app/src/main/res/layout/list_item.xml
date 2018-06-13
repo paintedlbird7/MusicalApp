@@ -1,29 +1,69 @@
+<!--&lt;!&ndash; Layout for a single list item &ndash;&gt;-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--&gt;-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/siouxsie_text_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:text="Siousxie and the Banshees"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginTop="30dp"-->
+
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/marywells_text_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:text="Mary Wells"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginBottom="15dp"-->
+
+        <!--/>-->
+
+<!--</LinearLayout>-->
+
+
+
 <!-- Layout for a single list item -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/siouxsie_text_view"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="Siousxie and the Banshees"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
 
-        />
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/marywells_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="Mary Wells"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="15dp"
+        <TextView
+            android:id="@+id/artist_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-        />
+    </LinearLayout>
 
 </LinearLayout>
+

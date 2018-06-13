@@ -16,6 +16,8 @@ public class Song {
         mSiouxsieSong = siouxsieSong;
     }
 
+    public Song(String s, String s1, int mary) {
+    }
 
 
     public String getDefaultSong(){
@@ -29,4 +31,8 @@ public class Song {
 
 
 }
+
+
+
+
 

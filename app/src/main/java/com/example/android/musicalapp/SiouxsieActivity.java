@@ -27,6 +27,10 @@ public class SiouxsieActivity extends AppCompatActivity {
         // words.add("one");
         final ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("painted bird", "A Kiss in the Dreamhouse\n"));
+        songs.add(new Song("Siousxie", "Painted Bird", R.drawable.siouxsie));
+        songs.add(new Song("Mary Wells", "Two Lovers", R.drawable.mary));
+
+
         songs.add(new Song("two", "otiiko"));
         songs.add(new Song("three", "tolookosu"));
         songs.add(new Song("four", "oyyisa"));
