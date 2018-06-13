@@ -8,24 +8,7 @@
     android:icon="@mipmap/ic_launcher"
     android:label="MusicalApp"
     android:supportsRtl="true"
-    android:theme="@style/AppTheme">
-    <activity android:name=".MainActivity">
-    <intent-filter>
-    <action android:name="android.intent.action.MAIN" />
-
-    <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
-    </activity>
-    <activity android:name=".SiouxsieActivity"
-    android:label="category_siousxie"
-    />
-        <activity android:name=".MaryActivity"
-            android:label="category_mary"
-
->
-
-    </activity>
-    </application>
+    android:theme="@style/AppTheme"></application>
     </manifest>
 
 
