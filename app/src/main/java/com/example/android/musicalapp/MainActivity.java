@@ -1,35 +1,22 @@
-/*
- * Copyright (C) 2016 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+package com.example.android.musicalapp;
+
+/**
+ * Created by rosaperez on 6/13/18.
  */
-package com.example.android.flavor;
 
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
-import com.example.android.musicalapp.R;
-import com.example.android.musicalapp.SongList;
-import com.example.android.musicalapp.SongListAdapter;
-
 import java.util.ArrayList;
 
-/**
- * {@link MainActivity} shows a list of Android platform releases.
- * For each release, display the name, version number, and image.
- */
+//**
+//        *{
+//
+//@link MainActivity} shows a list of Android platform releases.
+//        * For each release, display the name, version number, and image.
+//        */
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -37,100 +24,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Create an ArrayList of AndroidFlavor objects
+        // Create an ArrayList of SongList objects
+        ArrayList<SongList> androidFlavors = new ArrayList<SongList>();
+        androidFlavors.add(new SongList("Siousxie", "Painted Bird", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Mary Wells", "Two Lovers", R.drawable.mary));
 
-        final ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("painted bird", "A Kiss in the Dreamhouse\n"));
-        songs.add(new Song("Siousxie", "Painted Bird", R.drawable.siouxsie));
-        songs.add(new Song("Mary Wells", "Two Lovers", R.drawable.mary));
-        songs.add(new Song("Donut", "1.6", R.drawable.donut));
-        songs.add(new Song("Eclair", "2.0-2.1", R.drawable.eclair));
+        androidFlavors.add(new SongList("Donut", "2.2-2.2.3", R.drawable.donut));
+        androidFlavors.add(new SongList("Eclair", "2.3-2.3.7", R.drawable.eclair));
+//        androidFlavors.add(new SongList("Honeycomb", "3.0-3.2.6", R.drawable.honeycomb));
+//        androidFlavors.add(new SongList("Ice Cream Sandwich", "4.0-4.0.4", R.drawable.icecream));
+//        androidFlavors.add(new SongList("Jelly Bean", "4.1-4.3.1", R.drawable.jellybean));
+//        androidFlavors.add(new SongList("KitKat", "4.4-4.4.4", R.drawable.kitkat));
+//        androidFlavors.add(new SongList("Lollipop", "5.0-5.1.1", R.drawable.lollipop));
+//        androidFlavors.add(new SongList("Marshmallow", "6.0-6.0.1", R.drawable.marshmallow));
 
-//        ArrayList<AndroidFlavor> androidFlavors = new ArrayList<AndroidFlavor>();
-
-//        androidFlavors.add(new AndroidFlavor("Froyo", "2.2-2.2.3", R.drawable.froyo));
-//        androidFlavors.add(new AndroidFlavor("GingerBread", "2.3-2.3.7", R.drawable.gingerbread));
-//        androidFlavors.add(new AndroidFlavor("Honeycomb", "3.0-3.2.6", R.drawable.honeycomb));
-//        androidFlavors.add(new AndroidFlavor("Ice Cream Sandwich", "4.0-4.0.4", R.drawable.icecream));
-//        androidFlavors.add(new AndroidFlavor("Jelly Bean", "4.1-4.3.1", R.drawable.jellybean));
-//        androidFlavors.add(new AndroidFlavor("KitKat", "4.4-4.4.4", R.drawable.kitkat));
-//        androidFlavors.add(new AndroidFlavor("Lollipop", "5.0-5.1.1", R.drawable.lollipop));
-//        androidFlavors.add(new AndroidFlavor("Marshmallow", "6.0-6.0.1", R.drawable.marshmallow));
-
-        // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
-        // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item
+        // Create an {@link SongListAdapter}, whose data source is a list of
+        // {@link SongList}s. The adapter knows how to create list item views for each item
         // in the list.
-
-        //AndroidFlavorAdapter flavorAdapter = new AndroidFlavorAdapter(this, androidFlavors);
-        SongListAdapter listAdapter = new SongListAdapter(this, songList);
-
+        SongListAdapter flavorAdapter = new SongListAdapter(this, androidFlavors);
 
         // Get a reference to the ListView, and attach the adapter to the listView.
-        ListView listView = (ListView) findViewById(R.id.list);
-        //ListView listView = (ListView) findViewById(R.id.listview_flavor);
-        //listView.setAdapter(flavorAdapter);
-        listView.setAdapter(itemsAdapter);
-
+        ListView listView = (ListView) findViewById(R.id.listview_flavor);
+        listView.setAdapter(flavorAdapter);
     }
 }
-
-
-//
-//
-//package com.example.android.musicalapp;
-//
-//        import android.content.Intent;
-//        import android.os.Bundle;
-//        import android.support.v7.app.AppCompatActivity;
-//        import android.view.View;
-//        import android.widget.TextView;
-//
-//
-//
-//public class MainActivity extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//
-//        // Set the content of the activity to use the activity_main.xml layout file
-//        setContentView(R.layout.activity_main);
-//
-//        //Find the View that shows the numbers category
-//        TextView siouxsie = (TextView) findViewById(R.id.siouxsie);
-//
-//        //Set a clickListener on that View
-//        siouxsie.setOnClickListener(new OnClickListener() {
-//            // The code in this method will be executed when the numbers category View is clicked on.
-//
-//            @Override
-//            public void onClick(View view) {
-//                // Create a new intent to open the {@link NumbersActivity}
-//                Intent siouxsieIntent = new Intent(MainActivity.this,
-//                        SiouxsieActivity.class);
-//                //Start the new activity
-//                startActivity(siouxsieIntent);
-//
-//            }
-//        });
-//
-//
-//        //Find the View that shows the numbers category
-//        TextView mary = (TextView) findViewById(R.id.mary);
-//
-//        //Set a clickListener on that View
-//        mary.setOnClickListener(new OnClickListener() {
-//            // The code in this method will be executed when the numbers category View is clicked on.
-//
-//            //@Override
-//            public void onClick(View view) {
-//                // Create a new intent to open the {@link NumbersActivity}
-//                Intent maryIntent = new Intent(MainActivity.this,
-//                        MaryActivity.class);
-//                //Start the new activity
-//                startActivity(maryIntent);
-//
-//            }
-//        });
-//    }
-//}
