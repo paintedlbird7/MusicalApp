@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.musicalapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/twoLovers"
+            android:layout_width="match_parent"
+            android:layout_height="378dp"
+
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mary" />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/siouxsie"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="87dp"-->
+            <!--android:layout_weight="0.12"-->
+            <!--android:fontFamily="cursive"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="@string/painted_bird"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/mary"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:fontFamily="cursive"
+            android:paddingTop="10dp"
+            android:textColor="#ea9c43"
+            android:text="Marry Wells"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:textAlignment="center"
+            android:textSize="42sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/two_lovers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:paddingBottom="10dp"
+            android:text="Two Lovers"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/fowardButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--app:srcCompat="@android:drawable/ic_fast_forward" />-->
+
+
+            <ImageButton
+                android:id="@+id/rewindButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/rewind" />
+
+            <ImageButton
+                android:id="@+id/pauseButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="#f8f8ff"
+                android:src="@drawable/pause" />
+
+            <ImageButton
+                android:id="@+id/playButton"
+                android:background="#f8f8ff"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/play" />
+
+
+
+            <ImageButton
+                android:id="@+id/fastButton"
+                android:background="#f8f8ff"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/fast_forward" />
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/twolovers"-->
+            <!--android:layout_width="358dp"-->
+            <!--android:layout_height="158dp"-->
+            <!--app:srcCompat="@drawable/mary" />-->
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/mary"-->
+            <!--style="@style/CategoryStyle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="67dp"-->
+            <!--android:layout_weight="0.12"-->
+            <!--android:background="@color/category_phrases"-->
+            <!--android:fontFamily="monospace"-->
+            <!--android:text="Two Lovers"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="30sp" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="#ffbb"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="1">-->
+
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/imageButton6"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srcCompat="@android:drawable/ic_media_pause" />-->
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srcCompat="@android:drawable/ic_media_play" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<LinearLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context="com.example.android.musicalapp.SiousxieActivityty">-->
+
+    <!----><!----><!----><!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/txtitem"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="30dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;--><!--&lt;!&ndash;android:gravity="center"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="#ffffff"&ndash;&gt;--><!--&lt;!&ndash;android:hint="Item Value"&ndash;&gt;--><!--&lt;!&ndash;/>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
