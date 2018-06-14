@@ -37,8 +37,7 @@ public class SongList {
     * @param vNumber is the corresponding Android version number (e.g. 2.3-2.7)
     * @param image is drawable reference ID that corresponds to the Android version
     * */
-    public SongList(String vName, String vNumber, int imageResourceId)
-    {
+    public SongList(String vName, String vNumber, int imageResourceId) {
         mArtistName = vName;
         mArtistSong = vNumber;
         mImageResourceId = imageResourceId;

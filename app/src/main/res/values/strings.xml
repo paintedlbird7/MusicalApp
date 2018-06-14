@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">MusicalApp</string>
+    <string name="fontFamily">cursive</string>
+    <string name="painted_bird" />
 </resources>
 
 

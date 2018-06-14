@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_width">358dp</dimen>
+    <dimen name="layout_height">158dp</dimen>
+    <dimen name="layout_height2">67dp</dimen>
+    <dimen name="paddingTop">10dp</dimen>
+    <dimen name="textAligh">30sp</dimen>
+</resources>
