@@ -5,18 +5,14 @@ package com.example.android.musicalapp;
  */
 
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-
-import static android.R.attr.name;
 
 //**
 //        *{
@@ -38,31 +34,28 @@ public class MainActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.listview_flavor);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(context:
-        this, android.R.id.layout.simple_list_item_2,
-                android.R.id.text1, listviewitems)
 
-        View.setAdapter(adapter);
+        SongListAdapter flavorAdapter = null;
+        listView.setAdapter(flavorAdapter);
 
-        View.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-            !Override
-
+            @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String Templistview = listviewitems[position].toString();
-
-                Context packageContext;
-                Intent intent = new Intent(packageContext:MainActivity.this, secondactivity.class)
-
-                intent.putExtra(name:"Listviewclickvalue", Templistview);
-                startActivity();
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
             }
         });
-    
 
-
-
+//
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(context:
+//        this, android.R.id.layout.simple_list_item_2,
+//                android.R.id.text1, listviewitems)
+//
+//        View.setAdapter(adapter);
+//
+//        View.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 
         // Create an ArrayList of SongList objects
@@ -82,13 +75,10 @@ public class MainActivity extends AppCompatActivity {
         // Create an {@link SongListAdapter}, whose data source is a list of
         // {@link SongList}s. The adapter knows how to create list item views for each item
         // in the list.
-        SongListAdapter flavorAdapter = new SongListAdapter(this, androidFlavors);
+        flavorAdapter = new SongListAdapter(this, androidFlavors);
 
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) findViewById(R.id.listview_flavor);
         listView.setAdapter(flavorAdapter);
-    }
-
-    private void startActivity() {
     }
 }
