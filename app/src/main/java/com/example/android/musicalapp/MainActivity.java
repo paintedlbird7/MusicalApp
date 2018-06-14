@@ -5,11 +5,18 @@ package com.example.android.musicalapp;
  */
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+
+import static android.R.attr.name;
 
 //**
 //        *{
@@ -19,10 +26,44 @@ import java.util.ArrayList;
 //        */
 public class MainActivity extends AppCompatActivity {
 
+    ListView listView;
+
+    String[] listviewitems = new String[]{"Siouxsie", "Mary", "Painted Bird", "Two Lovers"};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        listView = (ListView) findViewById(R.id.listview_flavor);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(context:
+        this, android.R.id.layout.simple_list_item_2,
+                android.R.id.text1, listviewitems)
+
+        View.setAdapter(adapter);
+
+        View.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            !Override
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                String Templistview = listviewitems[position].toString();
+
+                Context packageContext;
+                Intent intent = new Intent(packageContext:MainActivity.this, secondactivity.class)
+
+                intent.putExtra(name:"Listviewclickvalue", Templistview);
+                startActivity();
+            }
+        });
+    
+
+
+
+
 
         // Create an ArrayList of SongList objects
         ArrayList<SongList> androidFlavors = new ArrayList<SongList>();
@@ -46,5 +87,8 @@ public class MainActivity extends AppCompatActivity {
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) findViewById(R.id.listview_flavor);
         listView.setAdapter(flavorAdapter);
+    }
+
+    private void startActivity() {
     }
 }
