@@ -48,14 +48,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//
-//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(context:
-//        this, android.R.id.layout.simple_list_item_2,
-//                android.R.id.text1, listviewitems)
-//
-//        View.setAdapter(adapter);
-//
-//        View.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 
         // Create an ArrayList of SongList objects
@@ -65,12 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         androidFlavors.add(new SongList("Donut", "2.2-2.2.3", R.drawable.donut));
         androidFlavors.add(new SongList("Eclair", "2.3-2.3.7", R.drawable.eclair));
-//        androidFlavors.add(new SongList("Honeycomb", "3.0-3.2.6", R.drawable.honeycomb));
-//        androidFlavors.add(new SongList("Ice Cream Sandwich", "4.0-4.0.4", R.drawable.icecream));
-//        androidFlavors.add(new SongList("Jelly Bean", "4.1-4.3.1", R.drawable.jellybean));
-//        androidFlavors.add(new SongList("KitKat", "4.4-4.4.4", R.drawable.kitkat));
-//        androidFlavors.add(new SongList("Lollipop", "5.0-5.1.1", R.drawable.lollipop));
-//        androidFlavors.add(new SongList("Marshmallow", "6.0-6.0.1", R.drawable.marshmallow));
+
 
         // Create an {@link SongListAdapter}, whose data source is a list of
         // {@link SongList}s. The adapter knows how to create list item views for each item
