@@ -53,8 +53,15 @@ public class MainActivity extends AppCompatActivity {
 
         // Create an ArrayList of SongList objects
         ArrayList<SongList> androidFlavors = new ArrayList<SongList>();
-        androidFlavors.add(new SongList("Siousxie", "Painted Bird", R.drawable.siouxsie));
-        androidFlavors.add(new SongList("Mary Wells", "Two Lovers", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie", "Cascade", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie", "Green Fingers", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie", "Obsession", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie", "She's a Carnival", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie", "Circle", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie", "Melt!", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie", "Painted Bird", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie", "Cocoon", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie", "Slowdive", R.drawable.siouxsie));
 
 
         // Create an {@link SongListAdapter}, whose data source is a list of
