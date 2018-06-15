@@ -5,4 +5,8 @@
     <dimen name="layout_height2">67dp</dimen>
     <dimen name="paddingTop">10dp</dimen>
     <dimen name="textAligh">30sp</dimen>
+    <dimen name="layout_width2">100dp</dimen>
+    <dimen name="layout_width100">100dp</dimen>
+    <dimen name="layout_width0">0dp</dimen>
+    <dimen name="paddingLeft16">16dp</dimen>
 </resources>

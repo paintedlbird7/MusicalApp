@@ -51,17 +51,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
-
         // Create an ArrayList of SongList objects
         ArrayList<SongList> androidFlavors = new ArrayList<SongList>();
         androidFlavors.add(new SongList("Siousxie", "Painted Bird", R.drawable.siouxsie));
         androidFlavors.add(new SongList("Mary Wells", "Two Lovers", R.drawable.mary));
-
-        androidFlavors.add(new SongList("Donut", "2.2-2.2.3", R.drawable.donut));
-        androidFlavors.add(new SongList("Eclair", "2.3-2.3.7", R.drawable.eclair));
 
 
         // Create an {@link SongListAdapter}, whose data source is a list of
@@ -73,22 +66,5 @@ public class MainActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.listview_flavor);
         listView.setAdapter(flavorAdapter);
 
-//        listView = (ListView) findViewById(R.id.listview_flavor);
-//
-//
-//        //SongListAdapter flavorAdapter = null;
-//        listView.setAdapter(flavorAdapter);
-//
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//
-//                Intent intent = new Intent(MainActivity.this, MaryActivity.class);
-//                startActivity(intent);
-//
-//            }
-//
-//        });
     }
 }
