@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, SiousxieActivity.class);
                 startActivity(intent);
 
             }
@@ -72,5 +72,23 @@ public class MainActivity extends AppCompatActivity {
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) findViewById(R.id.listview_flavor);
         listView.setAdapter(flavorAdapter);
+
+//        listView = (ListView) findViewById(R.id.listview_flavor);
+//
+//
+//        //SongListAdapter flavorAdapter = null;
+//        listView.setAdapter(flavorAdapter);
+//
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//                Intent intent = new Intent(MainActivity.this, MaryActivity.class);
+//                startActivity(intent);
+//
+//            }
+//
+//        });
     }
 }
