@@ -2,6 +2,10 @@
     <string name="app_name">MusicalApp</string>
     <string name="fontFamily">cursive</string>
     <string name="painted_bird" />
+    <string name="fontFamilycursive">cursive</string>
+    <string name="fontFcursive">cursive</string>
+    <string name="textSiousxie">Siousxie and the Banshees</string>
+    <string name="text_painted_bird">Painted Bird</string>
 </resources>
 
 

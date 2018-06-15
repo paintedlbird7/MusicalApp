@@ -9,4 +9,20 @@
     <dimen name="layout_width100">100dp</dimen>
     <dimen name="layout_width0">0dp</dimen>
     <dimen name="paddingLeft16">16dp</dimen>
+    <dimen name="layout_height_45dp">45dp</dimen>
+    <dimen name="layout_height45">45dp</dimen>
+    <dimen name="layout_height3">45dp</dimen>
+    <dimen name="layout_height4">45dp</dimen>
+    <dimen name="layouth45">45dp</dimen>
+    <dimen name="layouth45dp">45dp</dimen>
+    <dimen name="layouthe45">45dp</dimen>
+    <dimen name="layouthei45">45dp</dimen>
+    <dimen name="textSize50">50sp</dimen>
+    <dimen name="paddingB10">10dp</dimen>
+    <dimen name="textS32">32sp</dimen>
+    <dimen name="paddingT10">10dp</dimen>
+    <dimen name="layout_mR20">20sp</dimen>
+    <dimen name="layout_marginRight20">20sp</dimen>
+    <dimen name="layout_height59">59dp</dimen>
+    <dimen name="layout_height378">378dp</dimen>
 </resources>
