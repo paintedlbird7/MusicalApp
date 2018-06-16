@@ -24,13 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
     ListView listView;
 
-    String[] listviewitems = new String[]{"Siouxsie", "Mary", "Painted Bird", "Two Lovers"};
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         listView = (ListView) findViewById(R.id.listview_flavor);
 
@@ -74,4 +72,15 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(flavorAdapter);
 
     }
+
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            // Respond to the action bar's Up/Home button
+//            case android.R.id.home:
+//                NavUtils.navigateUpFromSameTask(this);
+//                return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 }
