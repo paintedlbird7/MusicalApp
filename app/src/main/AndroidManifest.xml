@@ -4,17 +4,14 @@
 
     <application
         android:allowBackup="true"
+        android:background="#000000"
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:background="#000000"
 
-        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
+    android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
-
-
-
 
 
             <intent-filter>
@@ -27,7 +24,7 @@
             android:name=".SiousxieActivity"
             android:label="Musical App"
 
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
