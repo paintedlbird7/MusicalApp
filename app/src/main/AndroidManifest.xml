@@ -6,17 +6,15 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true"
+        android:background="#000000"
+
         android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:label="@string/app_name">
 
 
-            android:parentActivityName=".MainActivity" >
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.musicalapp.MainActivity" />
+
 
 
             <intent-filter>
@@ -27,7 +25,13 @@
         </activity>
         <activity
             android:name=".SiousxieActivity"
-            android:label="Musical App">
+            android:label="Musical App"
+
+            android:parentActivityName=".MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalapp.MainActivity" />
 
 
         </activity>
