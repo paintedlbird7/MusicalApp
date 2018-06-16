@@ -16,15 +16,15 @@
 package com.example.android.musicalapp;
 
 /**
- * {@link SongList} represents a single Android platform release.
- * Each object has 3 properties: name, version number, and image resource ID.
+ * {@link SongList} represents a single list of Siousxie and the Banshees songs.
+ * Each object has 3 properties: song name, album name, and image resource ID.
  */
 public class SongList {
 
-    // Name of the Android version (e.g. Gingerbread, Honeycomb, Ice Cream Sandwich)
+    // Name of the Artist (e.g. Siousxie, Mary Wells, etc)
     private String mArtistName;
 
-    // Android version number (e.g. 2.3-2.7, 3.0-3.2.6, 4.0-4.0.4)
+    // Artist song name (e.g. painted bird, slowdive, etc)
     private String mArtistSong;
 
     // Drawable resource ID
@@ -33,9 +33,9 @@ public class SongList {
     /*
     * Create a new SongList object.
     *
-    * @param vName is the name of the Android version (e.g. Gingerbread)
-    * @param vNumber is the corresponding Android version number (e.g. 2.3-2.7)
-    * @param image is drawable reference ID that corresponds to the Android version
+    * @param vName is the name of the Artist Name (e.g. Siousxie)
+    * @param vNumber is the corresponding Artist song name (e.g. painted bird, slow dive, she's a carnaval)
+    * @param image is drawable reference ID that corresponds to the Artist name
     * */
     public SongList(String vName, String vNumber, int imageResourceId) {
         mArtistName = vName;
@@ -44,14 +44,14 @@ public class SongList {
     }
 
     /**
-     * Get the name of the Android version
+     * Get the name of the Artist name
      */
     public String getVersionName() {
         return mArtistName;
     }
 
     /**
-     * Get the Android version number
+     * Get the Artist song
      */
     public String getVersionNumber() {
         return mArtistSong;

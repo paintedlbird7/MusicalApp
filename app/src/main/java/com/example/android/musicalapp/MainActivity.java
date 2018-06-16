@@ -17,9 +17,7 @@ import java.util.ArrayList;
 //**
 //        *{
 //
-//@link MainActivity} shows a list of Android platform releases.
-//        * For each release, display the name, version number, and image.
-//        */
+//@link MainActivity} shows a list of Siousxie and the Banshees songs.
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
@@ -73,14 +71,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            // Respond to the action bar's Up/Home button
-//            case android.R.id.home:
-//                NavUtils.navigateUpFromSameTask(this);
-//                return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 }
