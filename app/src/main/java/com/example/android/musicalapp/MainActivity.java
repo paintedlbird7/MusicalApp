@@ -49,15 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
         // Create an ArrayList of SongList objects
         ArrayList<SongList> androidFlavors = new ArrayList<SongList>();
-        androidFlavors.add(new SongList("Siouxsie", "Cascade", R.drawable.siouxsie));
-        androidFlavors.add(new SongList("Siouxsie", "Green Fingers", R.drawable.siouxsie));
-        androidFlavors.add(new SongList("Siouxsie", "Obsession", R.drawable.siouxsie));
-        androidFlavors.add(new SongList("Siouxsie", "She's a Carnival", R.drawable.siouxsie));
-        androidFlavors.add(new SongList("Siouxsie", "Circle", R.drawable.siouxsie));
-        androidFlavors.add(new SongList("Siouxsie", "Melt!", R.drawable.siouxsie));
-        androidFlavors.add(new SongList("Siouxsie", "Painted Bird", R.drawable.siouxsie));
-        androidFlavors.add(new SongList("Siouxsie", "Cocoon", R.drawable.siouxsie));
-        androidFlavors.add(new SongList("Siouxsie", "Slowdive", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie & the Banshees", "Cascade", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie & the Banshees", "Green Fingers", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie & the Banshees", "Obsession", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie & the Banshees", "She's a Carnival", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie & the Banshees", "Circle", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie & the Banshees", "Melt!", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie & the Banshees", "Painted Bird", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie & the Banshees", "Cocoon", R.drawable.siouxsie));
+        androidFlavors.add(new SongList("Siouxsie & the Banshees", "Slowdive", R.drawable.siouxsie));
 
 
         // Create an {@link SongListAdapter}, whose data source is a list of

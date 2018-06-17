@@ -5,6 +5,7 @@
     android:gravity="center_vertical"
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:orientation="horizontal"
+    android:background="#323232"
     android:padding="16dp">
 
     <ImageView
@@ -15,17 +16,25 @@
     <LinearLayout
         android:layout_width="@dimen/layout_width0"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="0.12"
         android:orientation="vertical"
         android:paddingLeft="@dimen/paddingLeft16">
 
         <TextView
             android:id="@+id/version_name"
             android:layout_width="wrap_content"
+            android:paddingHorizontal="20sp"
+            android:textColor="#A08768"
+            android:textSize="25dp"
+            android:fontFamily="cursive"
             android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/version_number"
+            android:paddingHorizontal="20sp"
+            android:textColor="#FF5867C1"
+            android:textSize="24dp"
+            android:fontFamily="serif-monospace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
